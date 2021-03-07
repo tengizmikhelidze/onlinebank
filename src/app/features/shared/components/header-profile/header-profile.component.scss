@@ -1,0 +1,185 @@
+@import './index.scss';
+
+.profileBef {
+  user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: $primary-dark;
+  display: flex;
+  align-items: center;
+  width: 155.75px;
+  height: 40px;
+  right: 0;
+
+  .image {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    border: 2px solid $primary;
+    float: left;
+    margin-right: 11.3px;
+
+    img {
+      border-radius: 32px;
+      width: 32px;
+    }
+  }
+
+  .name {
+    letter-spacing: 0.2px;
+    font-family: $roboto;
+    width: 69%;
+  }
+}
+
+.profileHover {
+  color: $primary-dark;
+  background-color: white;
+  font-weight: 500;
+  width: 286px;
+  height: 237px;
+  right: 0;
+  margin-bottom: 1px;
+  box-sizing: border-box;
+  display: none;
+  clear: both;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.000005),
+    0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  outline: none;
+  // -webkit-animation: slide-down .3s ease-in-out;
+
+  .about {
+    background-color: $background-2;
+    height: 79.75px;
+    font-family: $rubik;
+    align-items: center;
+    font-size: 14px;
+    display: flex;
+    box-sizing: border-box;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+    padding-top: 2px;
+    padding-left: 30px;
+
+    .profileMini {
+      margin-right: 15px;
+      margin-left: 22px;
+      height: 36px;
+      width: 36px;
+      float: left;
+      letter-spacing: 0.3px;
+    }
+
+    .mail {
+      color: $secondary-dark-2;
+      letter-spacing: 0px;
+      font-weight: 400;
+    }
+
+    img {
+      border-radius: 32px;
+      width: 32px;
+    }
+  }
+
+  .profSettings {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 156.25px;
+    font-size: 12px;
+    box-sizing: border-box;
+
+    a {
+      display: flex;
+      height: 53px;
+      padding-left: 23px;
+      cursor: pointer;
+      text-decoration: none;
+      user-select: none;
+      transition: 0.3s ease-in-out;
+      border-left: 2px solid transparent;
+
+      &:hover {
+        background-color: $background-2;
+        border-left: 2px solid $primary;
+      }
+
+      &:last-of-type {
+        border-radius: 0 0 5px 5px;
+      }
+
+      i {
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+        color: $secondary-dark-1;
+        font-size: 18px;
+        transition: 0.3s ease-in-out;
+      }
+
+      &:hover i {
+        color: $primary;
+        margin-left: 4px;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        color: $primary-dark;
+        font-size: 12px;
+        letter-spacing: 0.1px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.show {
+  display: block;
+  -webkit-animation: slide-down 0.3s ease-in-out;
+}
+.hide {
+  display: none;
+}
+.visuallyHidden {
+  -webkit-animation: slide-in 0.3s ease-in-out;
+}
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+  }
+}
+
+:host {
+  position: relative;
+  display: inline-block;
+}
+
+#myDropdown {
+  outline: none;
+}

@@ -1,0 +1,781 @@
+{
+  "questions": [
+    {
+      "questionId": 1,
+      "question": "your pet name"
+    },
+    {
+      "questionId": 2,
+      "question": "your chilhood nickname"
+    },
+    {
+      "questionId": 3,
+      "question": "favorite car model"
+    }
+  ],
+  "answers": [
+    {
+      "questionId": 3,
+      "userId": 1,
+      "answer": "",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "answer": "1212",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "answer": "123",
+      "id": 3
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "table",
+      "img": "https://picsum.photos/200?random=1"
+    },
+    {
+      "id": 2,
+      "name": "chair",
+      "img": "https://picsum.photos/200?random=2"
+    },
+    {
+      "id": 3,
+      "name": "magazine",
+      "img": "https://picsum.photos/200?random=3"
+    },
+    {
+      "id": 4,
+      "name": "train",
+      "img": "https://picsum.photos/200?random=4"
+    },
+    {
+      "id": 5,
+      "name": "shaker",
+      "img": "https://picsum.photos/200?random=5"
+    },
+    {
+      "id": 6,
+      "name": "gym",
+      "img": "https://picsum.photos/200?random=6"
+    },
+    {
+      "id": 7,
+      "name": "bus",
+      "img": "https://picsum.photos/200?random=7"
+    },
+    {
+      "id": 8,
+      "name": "ferrari",
+      "img": "https://picsum.photos/200?random=8"
+    }
+  ],
+  "limits": [
+    {
+      "bankLimit": 22000,
+      "onlineLimit": 10000,
+      "cashLimit": 9000,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "bankLimit": 8000,
+      "onlineLimit": 5000,
+      "cashLimit": 4000
+    },
+    {
+      "id": 3,
+      "bankLimit": 12000,
+      "onlineLimit": 10000,
+      "cashLimit": 8000
+    },
+    {
+      "bankLimit": 5000,
+      "onlineLimit": 5000,
+      "cashLimit": 5000,
+      "id": 4
+    },
+    {
+      "bankLimit": 5000,
+      "onlineLimit": 5000,
+      "cashLimit": 5000,
+      "id": 5
+    },
+    {
+      "bankLimit": 7000,
+      "onlineLimit": 5000,
+      "cashLimit": 11000,
+      "id": 6
+    }
+  ],
+  "income": [
+    {
+      "id": 1,
+      "data": [
+        18000,
+        8000,
+        20000,
+        48200,
+        22000,
+        10000,
+        20000,
+        15000,
+        37000,
+        55000,
+        12000,
+        18000
+      ]
+    },
+    {
+      "id": 2,
+      "data": [
+        13000,
+        8000,
+        40000,
+        24100,
+        16000,
+        16000,
+        18000,
+        8000,
+        20000,
+        48200,
+        22000,
+        10000
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "cardName": "VISA CARD",
+      "cardType": "visa",
+      "accountNumber": "GE32TB1111222233334444",
+      "cardNumber": "4111222233331234",
+      "cardholder": "BARRY ARMSTRONG",
+      "expirationDate": "10/24",
+      "availableAmount": 35210.09000000001,
+      "security3D": false,
+      "userId": "3",
+      "id": 1
+    },
+    {
+      "cardName": "MASTER CARD",
+      "cardType": "mastercard",
+      "accountNumber": "GE32TB2222111133334444",
+      "cardNumber": "5222111133338040",
+      "cardholder": "JOHN LENNON",
+      "expirationDate": "04/30",
+      "availableAmount": 37937.96,
+      "security3D": true,
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "cardName": "MASTER CARD",
+      "cardType": "mastercard",
+      "accountNumber": "GE32TB3333111122224444",
+      "cardNumber": "5333111122220097",
+      "cardholder": "TILL LINDEMANN",
+      "expirationDate": "11/26",
+      "availableAmount": 10000,
+      "security3D": true,
+      "userId": "2",
+      "id": 3
+    },
+    {
+      "cardName": "ADMIN2",
+      "accountNumber": "GE32TB4434234223333333",
+      "cardNumber": "5829389283948298",
+      "cardholder": "ADMIN ADMIN",
+      "expirationDate": "11/23",
+      "availableAmount": 17851.4674578,
+      "security3D": true,
+      "userId": "2",
+      "cardType": "mastercard",
+      "id": 4,
+      "iconPath": "./assets/cards/mastercard.svg",
+      "blocked": true
+    },
+    {
+      "cardName": "41414214",
+      "accountNumber": "GE32TB4124141441414141",
+      "cardNumber": "4123456789123456",
+      "cardholder": "ME",
+      "expirationDate": "02/25",
+      "availableAmount": 50000,
+      "security3D": true,
+      "userId": "2",
+      "cardType": "visa",
+      "id": 5
+    }
+  ],
+  "paymentTypes": [
+    {
+      "name": "Electronic Payments",
+      "providers": [
+        {
+          "name": "paypal"
+        },
+        {
+          "name": "skrill"
+        },
+        {
+          "name": "payoneer"
+        }
+      ],
+      "icon": "las la-credit-card",
+      "formPath": "electronic-payment"
+    },
+    {
+      "name": "Bank Transfer",
+      "providers": [
+        {
+          "name": "any bank"
+        }
+      ],
+      "icon": "las la-university",
+      "formPath": "bank-transfer"
+    },
+    {
+      "name": "Internal Transfer",
+      "providers": [
+        {
+          "name": "visa"
+        },
+        {
+          "name": "mastercard"
+        }
+      ],
+      "icon": "las la-exchange-alt",
+      "formPath": "internal-transfer"
+    }
+  ],
+  "users": [
+    {
+      "email": "sanchito_p@gmail.com",
+      "id": 1,
+      "fullname": "SANCHO PANZA",
+      "password": "12345678902"
+    },
+    {
+      "email": "admin@gmail.com",
+      "language": "English",
+      "sex": "Male",
+      "id": 2,
+      "password": "12345678",
+      "fullname": "EDMOND DANTES"
+    },
+    {
+      "fullname": "VITO CORLEONE",
+      "email": "mafia_immortal@outlook.com",
+      "password": "ssssssssss",
+      "id": 3
+    },
+    {
+      "fullname": "JAVAXA JAVAXA",
+      "email": "javaxa@gmail.com",
+      "password": "Javaxa1234",
+      "id": 4
+    },
+    {
+      "fullname": "BABAXA BABAXA",
+      "email": "babaxa@gmail.com",
+      "password": "Babaxa1234",
+      "id": 5
+    },
+    {
+      "fullname": "GIO GIO",
+      "email": "gio@gmail.com",
+      "password": "Gio12345",
+      "id": 6
+    }
+  ],
+  "deposits": [
+    {
+      "id": 1,
+      "depositName": "Cumulative deposit",
+      "accountNumber": "UK64CT00000000000010034567",
+      "depositRate": 0.05,
+      "startDate": "20.06.2018",
+      "expirationDate": "20.06.2022",
+      "availableAmount": 56400,
+      "accuredInterest": 1640,
+      "balance": 56400,
+      "accured": 640,
+      "type": "Cumulative",
+      "userId": "2"
+    }
+  ],
+  "loans": [
+    {
+      "id": 1,
+      "loanName": "Mortgage loan",
+      "accountNumber": "UK64CT00000000000010034567",
+      "loanRate": 0.14,
+      "startDate": "20.06.2018",
+      "expirationDate": "20.06.2022",
+      "balance": 84800,
+      "paid": 24800,
+      "blocked": true,
+      "type": "Mortgage",
+      "userId": "2"
+    },
+    {
+      "id": 2,
+      "loanName": "Consumer loan",
+      "accountNumber": "UK64CT00000000000010035931",
+      "loanRate": 0.18,
+      "startDate": "20.06.2018",
+      "expirationDate": "20.06.2022",
+      "balance": 66400,
+      "paid": 650,
+      "blocked": false,
+      "type": "Consumer",
+      "userId": "3"
+    }
+  ],
+  "charts": [
+    {
+      "id": 1,
+      "name": "Cards balance",
+      "data": [78000, 91000, 78000, 52000, 72800, 104000, 124800]
+    },
+    {
+      "id": 2,
+      "name": "Deposit (3% Rate)",
+      "data": [35250, 38070, 39480, 40890, 38070, 49350, 56400]
+    },
+    {
+      "id": 3,
+      "name": "Pending credit",
+      "data": [41300, 28910, 16520, 28910, 24800]
+    }
+  ],
+  "cardCharts": [
+    {
+      "id": 1,
+      "userId": 2,
+      "data": [78000, 91000, 78000, 52000, 72800, 104000, 124800]
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "data": [390, 455, 380, 780, 800, 500, 1000]
+    }
+  ],
+  "depositCharts": [
+    {
+      "id": 3,
+      "userId": 2,
+      "data": [3525, 3807, 3948, 4089, 3807, 4935, 5640]
+    }
+  ],
+  "loanCharts": [
+    {
+      "id": 4,
+      "userId": 2,
+      "data": [4130, 2891, 1652, 2891, 2480]
+    }
+  ],
+  "invoices": [
+    {
+      "template": "Website design",
+      "invoiceNumber": "IO-BN-124",
+      "dueDate": "2021-03-11",
+      "companyName": "Vadafone LLC",
+      "contactEmail": "vadafone@gmail.com",
+      "address": "123 Main Street, Somewhere, CA 94000",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 2,
+          "price": 150
+        }
+      ],
+      "totalAmount": 300,
+      "status": "Pending",
+      "invoiceCreateDate": "2021-02-24T18:34:49.334Z",
+      "id": 1
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-100",
+      "dueDate": "2021-03-13",
+      "companyName": "AOT LLC",
+      "contactEmail": "aot@gmail.com",
+      "address": "333 Main Street, Somewhere, CA 99000",
+      "items": [
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 10,
+          "price": 100
+        },
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 150,
+          "price": 100
+        }
+      ],
+      "totalAmount": 16000,
+      "status": "Pending",
+      "invoiceCreateDate": "2021-02-24T18:37:01.789Z",
+      "id": 2
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-124",
+      "dueDate": "2018-08-16",
+      "companyName": "OOB",
+      "contanctEmail": "oobcompany@gmail.com",
+      "address": "133 Main Street, Somewhere, CA 91999",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 2,
+          "price": 120
+        },
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 10,
+          "price": 100
+        }
+      ],
+      "totalAmount": 1240,
+      "status": "Paid",
+      "id": 3
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-127",
+      "dueDate": "2018-08-03",
+      "companyName": "OOB",
+      "contanctEmail": "oobcompany@gmail.com",
+      "address": "133 Main Street, Somewhere, CA 91999",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 1,
+          "price": 384.2
+        },
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 10,
+          "price": 50
+        }
+      ],
+      "totalAmount": 894.2,
+      "status": "Paid",
+      "id": 4
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-167",
+      "dueDate": "2018-11-10",
+      "companyName": "OOB",
+      "contanctEmail": "oobcompany@gmail.com",
+      "address": "133 Main Street, Somewhere, CA 91999",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 1,
+          "price": 904
+        },
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 10,
+          "price": 600
+        }
+      ],
+      "totalAmount": 6904,
+      "status": "Paid",
+      "id": 5
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-172",
+      "dueDate": "2018-05-16",
+      "companyName": "OOB",
+      "contanctEmail": "oobcompany@gmail.com",
+      "address": "133 Main Street, Somewhere, CA 91999",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 4,
+          "price": 100
+        },
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 10,
+          "price": 300
+        }
+      ],
+      "totalAmount": 3400,
+      "status": "Pending",
+      "id": 6
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-178",
+      "dueDate": "2018-03-04",
+      "companyName": "OOB",
+      "contanctEmail": "oobcompany@gmail.com",
+      "address": "133 Main Street, Somewhere, CA 91999",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 2,
+          "price": 40
+        },
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 4,
+          "price": 100
+        }
+      ],
+      "totalAmount": 480,
+      "status": "Pending",
+      "id": 7
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-196",
+      "dueDate": "2018-03-08",
+      "companyName": "OOB",
+      "contanctEmail": "oobcompany@gmail.com",
+      "address": "133 Main Street, Somewhere, CA 91999",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 2,
+          "price": 120
+        },
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 10,
+          "price": 870
+        }
+      ],
+      "totalAmount": 8940,
+      "status": "Pending",
+      "id": 8
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-215",
+      "dueDate": "2018-10-17",
+      "companyName": "OOB",
+      "contanctEmail": "oobcompany@gmail.com",
+      "address": "133 Main Street, Somewhere, CA 91999",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 4,
+          "price": 1985
+        },
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 10,
+          "price": 100
+        }
+      ],
+      "totalAmount": 8940,
+      "status": "Cancelled",
+      "id": 9
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-230",
+      "dueDate": "2018-09-22",
+      "companyName": "OOB",
+      "contanctEmail": "oobcompany@gmail.com",
+      "address": "133 Main Street, Somewhere, CA 91999",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 5,
+          "price": 20
+        },
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 6,
+          "price": 4
+        }
+      ],
+      "totalAmount": 124,
+      "status": "Paid",
+      "id": 10
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-237",
+      "dueDate": "2018-10-27",
+      "companyName": "OOB",
+      "contanctEmail": "oobcompany@gmail.com",
+      "address": "133 Main Street, Somewhere, CA 91999",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 1,
+          "price": 509
+        },
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 5,
+          "price": 11
+        }
+      ],
+      "totalAmount": 564,
+      "status": "Paid",
+      "id": 11
+    },
+    {
+      "template": "Mobile App",
+      "invoiceNumber": "IO-BN-242",
+      "dueDate": "2018-04-11",
+      "companyName": "OOB",
+      "contanctEmail": "oobcompany@gmail.com",
+      "address": "133 Main Street, Somewhere, CA 91999",
+      "items": [
+        {
+          "itemDescription": "Marketing Materials",
+          "itemQty": 1,
+          "price": 3
+        },
+        {
+          "itemDescription": "Printing Equipment",
+          "itemQty": 1,
+          "price": 1.2
+        }
+      ],
+      "totalAmount": 4.2,
+      "status": "Paid",
+      "id": 12
+    }
+  ],
+  "transactions": [
+    {
+      "title": "electronic payment to paypal@gmail.com",
+      "date": "2021-03-01T19:23:09.134Z",
+      "type": "electronic",
+      "fromAccountNumber": "GE32TB4434234223333333",
+      "fromAccountUserId": "2",
+      "toAccountEmail": "paypal@gmail.com",
+      "paymentSystem": "paypal",
+      "amount": 39,
+      "currency": "USD",
+      "status": "pending",
+      "id": 2
+    },
+    {
+      "title": "Internal Bank transfer to user: VITO CORLEONE",
+      "toUserId": "3",
+      "date": "2021-03-01T19:24:01.807Z",
+      "type": "bank",
+      "fromAccountUserId": "2",
+      "fromAccountNumber": "GE32TB4434234223333333",
+      "toAccountNumber": "GE32TB1111222233334444",
+      "amount": 50,
+      "currency": "USD",
+      "beneficiary": "VITO CORLEONE",
+      "bankTransferType": "personal transfer",
+      "status": "pending",
+      "id": 3
+    },
+    {
+      "title": "External Bank transfer to beneficiary: GIORGI BOG USER",
+      "toUserId": "",
+      "date": "2021-03-01T19:24:47.170Z",
+      "type": "bank",
+      "fromAccountUserId": "2",
+      "fromAccountNumber": "GE32TB3333111122224444",
+      "toAccountNumber": "BOG9912300000041241",
+      "amount": 300,
+      "currency": "USD",
+      "beneficiary": "GIORGI BOG USER",
+      "bankTransferType": "personal transfer",
+      "status": "pending",
+      "id": 4
+    },
+    {
+      "title": "Internal Bank transfer to account GE32TB4434234223333333",
+      "date": "2021-03-01T19:24:58.856Z",
+      "type": "internal",
+      "fromAccountUserId": "2",
+      "fromAccountNumber": "GE32TB3333111122224444",
+      "amount": 134,
+      "currency": "USD",
+      "internalTransferType": "personal transfer",
+      "toAccountNumber": "GE32TB4434234223333333",
+      "status": "pending",
+      "id": 5
+    }
+  ],
+  "news": [
+    {
+      "imageUrl": "https://image.cnbcfm.com/api/v1/image/106835608-1612464676261PRESS-NYSE-Photo-20210204-5-jpg?v=1612464760&w=740&h=416",
+      "imgAlt": "Employees",
+      "releaseDate": "2021-02-26T03:55:10Z",
+      "title": "Rising Interest Rates May Continue To Test The Stock Market In The Week Ahead",
+      "content": "The tug-of-war between stocks and rising bond yields could set the tone for the coming week, particularly if positive economic data continues to push Treasury yields higher. Friday’s February employment report is the highlight of the week’s data and an important current look at the impact of the virus on the economy, after just 49,000 jobs were added in January. For February, economist expect to see 218,000 jobs added, and the unemployment rate should stay the same at 6.3%, according to Dow Jones. The rapid runup in interest rates this month caught investors by surprise. The benchmark 10-year yield, which influences mortgages and other loans, was at 1.46% Friday, about 15 basis points [0.15%] above the level it was at just a week earlier. After a big surge Thursday, the 10-year yield traded on both sides of 1.50%, which is the consensus view of where yields would be at the end of the year, not the beginning."
+    },
+    {
+      "imageUrl": "https://image.cnbcfm.com/api/v1/image/106846514-1614364263993-2020-12-13T151510Z_1097298982_UP1EGCD16DA4E_RTRMADP_3_MOTOR-F1-ABUDHABI.jpg?v=1614364377&w=740&h=416",
+      "imgAlt": "Formula One",
+      "releaseDate": "2021-02-26T18:09:37Z",
+      "title": "Formula One Revenues Dropped By $877 Million In 2020",
+      "content": "Formula One’s revenues took an $877 million hit last year, falling 43% as a result of the Covid-19 pandemic, owners Liberty Media reported on Friday. Revenues amounted to $1.145 billion compared to a previous $2.022 billion in a year that featured 17 races, mostly without spectators, and had highlight events such as Monaco and Singapore cancelled. The previous year had 21 races and 22 had been planned for 2020 with 23 scheduled for 2021. The previous year had 21 races and 22 had been planned for 2020 with 23 scheduled for 2021.Formula One’s primary revenues are derived mostly from race promotion fees, broadcasting deals and advertising and sponsorship. The revenues also provide a significant part of the budget for smaller teams. The new season starts in Bahrain on March 28."
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "userId": 1,
+      "productUpdates": false,
+      "offerUpdates": false,
+      "comments": true,
+      "notifications": true
+    },
+    {
+      "productUpdates": true,
+      "offerUpdates": false,
+      "comments": false,
+      "notifications": true,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "productUpdates": false,
+      "offerUpdates": false,
+      "comments": true,
+      "notifications": true,
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "productUpdates": false,
+      "offerUpdates": false,
+      "comments": true,
+      "notifications": true,
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "productUpdates": false,
+      "offerUpdates": false,
+      "comments": true,
+      "notifications": true,
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "productUpdates": false,
+      "offerUpdates": false,
+      "comments": true,
+      "notifications": true,
+      "userId": 6,
+      "id": 6
+    }
+  ]
+}

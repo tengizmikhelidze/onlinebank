@@ -1,0 +1,14 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="./chart.js"></script>
+
+<div [class]="'container ' + (color$ | async)">
+  <div class="info">
+    <p class="amount">
+      {{ amount$ | async }}<sup><i [class]="arrow$ | async"></i></sup>
+    </p>
+    <p class="title">{{ title$ | async }}</p>
+  </div>
+  <div class="chart">
+    <canvas #chart></canvas>
+  </div>
+</div>

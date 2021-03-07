@@ -1,0 +1,39 @@
+<div
+  #dropbtn
+  class="profileBef dropbtn"
+  (click)="clickDropdown()"
+  [ngClass]="status ? 'clicked' : 'notClicked'"
+>
+  <div class="image dropbtn">
+    <img class="dropbtn" src="{{ user.image }}" alt="" />
+  </div>
+  <div class="name dropbtn">{{ this.user.fullname | titlecase }}</div>
+</div>
+<div
+  #userDropdownMenu
+  tabindex="-1"
+  class="profileHover"
+  id="dropdown"
+  (click)="this.stayOnDropdown($event)"
+>
+  <div class="about">
+    <div>
+      <div>{{ this.user.fullname | titlecase }}</div>
+      <div class="mail">{{ this.user.email }}</div>
+    </div>
+  </div>
+  <div class="profSettings">
+    <a routerLink="/myprofile" (click)="hideDropdown()">
+      <i class="las la-user"></i>
+      <p>YOUR PROFILE</p>
+    </a>
+    <a routerLink="settings" (click)="hideDropdown()">
+      <i class="las la-cog"></i>
+      <p>SETTINGS</p>
+    </a>
+    <a (click)="signOut()" routerLink="/sign-out" (click)="hideDropdown()">
+      <i class="las la-sign-out-alt"></i>
+      <p>SIGN OUT</p>
+    </a>
+  </div>
+</div>

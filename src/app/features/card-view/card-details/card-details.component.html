@@ -1,0 +1,16 @@
+<app-card-view-template
+  [list]="list$ | async"
+  [cardInfo]="cardInfo$ | async"
+  [name]="name$ | async"
+  [amount]="amount$ | async"
+  [canBlock]="true"
+  [buttons]="buttons$ | async"
+  [background]="background$ | async"
+  [ngClass]="{ 'disable-select': (canSelect$ | async) !== true }"
+>
+  <img header [src]="icon$ | async" alt="Icon" />
+  <img logo [src]="logo$ | async" alt="Logo" />
+</app-card-view-template>
+<app-features-shared-bank-transactions style="grid-row: 1/3" [input]="'false'">
+  Latest Transactions
+</app-features-shared-bank-transactions>

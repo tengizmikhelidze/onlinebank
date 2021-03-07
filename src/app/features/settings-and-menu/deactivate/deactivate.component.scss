@@ -1,0 +1,44 @@
+@import 'src/styles/index';
+
+.background {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+}
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 220px;
+  padding: 20px;
+  background-color: #ffab2b;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: floralwhite;
+    width: 250px;
+    line-height: 30px;
+    margin: auto;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: floralwhite;
+    font-size: 14px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+}

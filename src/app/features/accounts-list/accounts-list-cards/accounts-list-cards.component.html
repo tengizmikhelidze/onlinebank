@@ -1,0 +1,23 @@
+<ng-template #iconTemplate>
+  <i class="lar la-credit-card"></i>
+</ng-template>
+
+<div class="list">
+  <div class="header">
+    <p class="name">Your cards</p>
+    <p [routerLink]="'create-card'" class="new">
+      <i class="las la-plus-circle"></i>New card
+    </p>
+  </div>
+  <div class="items">
+    <app-accounts-list-item
+      *ngFor="let card of pipedCards$ | async"
+      [info]="card.info"
+      class="disable-select"
+      [class.blocked]="card.blocked"
+      [routerLink]="['/card-view/card/' + card.id]"
+      ><img [src]="card.iconPath" [alt]="card.cardName"
+    /></app-accounts-list-item>
+    <p *ngIf="!cards$ || !(cards$ | async)?.length">You have no cards</p>
+  </div>
+</div>
